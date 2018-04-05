@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L3h-0h-NF7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DetailMVVM View Controller-->
+        <scene sceneID="z5f-pK-rXY">
+            <objects>
+                <viewController id="L3h-0h-NF7" customClass="DetailMVVMViewController" customModule="FlawlessNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WUz-Ub-a7a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserId:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URi-KB-SJN">
+                                <rect key="frame" x="16" y="36" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCS-th-Yhr">
+                                <rect key="frame" x="16" y="73" width="93.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PZ-Wv-NPk">
+                                <rect key="frame" x="132" y="36" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17s-LU-USw">
+                                <rect key="frame" x="132" y="73" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1PZ-Wv-NPk" firstAttribute="leading" secondItem="17s-LU-USw" secondAttribute="leading" id="0b4-TF-Rln"/>
+                            <constraint firstItem="URi-KB-SJN" firstAttribute="top" secondItem="9L1-oH-h68" secondAttribute="top" constant="16" id="25F-jK-fP0"/>
+                            <constraint firstItem="17s-LU-USw" firstAttribute="leading" secondItem="PCS-th-Yhr" secondAttribute="trailing" constant="22.5" id="9n0-yW-3xy"/>
+                            <constraint firstItem="17s-LU-USw" firstAttribute="top" secondItem="PCS-th-Yhr" secondAttribute="top" id="D8W-Rq-SVx"/>
+                            <constraint firstItem="1PZ-Wv-NPk" firstAttribute="centerY" secondItem="URi-KB-SJN" secondAttribute="centerY" id="Ozn-Ny-Fmp"/>
+                            <constraint firstItem="URi-KB-SJN" firstAttribute="leading" secondItem="9L1-oH-h68" secondAttribute="leading" constant="16" id="S1i-dG-0zG"/>
+                            <constraint firstItem="PCS-th-Yhr" firstAttribute="top" secondItem="URi-KB-SJN" secondAttribute="bottom" constant="16" id="SNZ-i0-tB5"/>
+                            <constraint firstItem="PCS-th-Yhr" firstAttribute="leading" secondItem="URi-KB-SJN" secondAttribute="leading" id="iBZ-Mh-5Ps"/>
+                            <constraint firstItem="9L1-oH-h68" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="17s-LU-USw" secondAttribute="trailing" constant="16" id="nGj-QJ-VYm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9L1-oH-h68"/>
+                    </view>
+                    <connections>
+                        <outlet property="idLabel" destination="1PZ-Wv-NPk" id="ppR-IN-ZG8"/>
+                        <outlet property="nameLabel" destination="17s-LU-USw" id="l1a-Sc-Ax9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HmA-Pp-p69" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="96"/>
+        </scene>
+    </scenes>
+</document>
