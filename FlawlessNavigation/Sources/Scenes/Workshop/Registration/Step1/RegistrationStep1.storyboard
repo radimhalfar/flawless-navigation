@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eZZ-wr-Dvg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registration Step1 View Controller-->
+        <scene sceneID="CDt-My-Iqa">
+            <objects>
+                <viewController id="eZZ-wr-Dvg" customClass="RegistrationStep1ViewController" customModule="FlawlessNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zjN-wB-6lI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIQ-fk-4vi">
+                                <rect key="frame" x="24" y="208.5" width="327" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="eZZ-wr-Dvg" id="IIC-W6-Chl"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwV-HH-SNF">
+                                <rect key="frame" x="24" y="179.5" width="128" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJN-Hx-GKd">
+                                <rect key="frame" x="127.5" y="260" width="120" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="0GE-xt-rIK"/>
+                                    <constraint firstAttribute="height" constant="44" id="q3f-Qg-dxH"/>
+                                </constraints>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <segue destination="qEm-qR-UdE" kind="show" identifier="showStep2" id="WLA-13-9s7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EJN-Hx-GKd" firstAttribute="top" secondItem="cIQ-fk-4vi" secondAttribute="bottom" constant="21.5" id="48I-d4-uRa"/>
+                            <constraint firstItem="cIQ-fk-4vi" firstAttribute="leading" secondItem="Xdc-LZ-xGs" secondAttribute="leading" constant="24" id="7F0-DE-u8m"/>
+                            <constraint firstItem="cIQ-fk-4vi" firstAttribute="centerY" secondItem="Xdc-LZ-xGs" secondAttribute="centerY" constant="-120" id="8Yu-ER-d3e"/>
+                            <constraint firstItem="cIQ-fk-4vi" firstAttribute="centerX" secondItem="Xdc-LZ-xGs" secondAttribute="centerX" id="UZk-vM-Ahw"/>
+                            <constraint firstItem="cIQ-fk-4vi" firstAttribute="top" secondItem="AwV-HH-SNF" secondAttribute="bottom" constant="8.5" id="bP0-bC-uCl"/>
+                            <constraint firstItem="AwV-HH-SNF" firstAttribute="leading" secondItem="cIQ-fk-4vi" secondAttribute="leading" id="bmg-wL-4bM"/>
+                            <constraint firstItem="EJN-Hx-GKd" firstAttribute="centerX" secondItem="cIQ-fk-4vi" secondAttribute="centerX" id="nuB-DE-ouG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xdc-LZ-xGs"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="cIQ-fk-4vi" id="7J2-55-J9s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nTY-Oz-tuh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.799999999999997" y="117.39130434782609"/>
+        </scene>
+        <!--RegistrationStep2-->
+        <scene sceneID="UWQ-xA-eNh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RegistrationStep2" id="qEm-qR-UdE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ixu-Kr-Ytv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="117"/>
+        </scene>
+    </scenes>
+</document>

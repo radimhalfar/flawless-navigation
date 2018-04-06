@@ -11,10 +11,12 @@ final class DetailVIPViewController: UIViewController, DetailVIPDisplayLogic {
     @IBOutlet private weak var nameLabel: UILabel!
 
     var interactor: DetailVIPBusinessLogic?
+    var contact: InloopContact?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        navigationItem.title = "Detail VIP"
         interactor?.getData()
     }
 
@@ -31,6 +33,7 @@ extension DetailVIPViewController {
         let presenter = DetailVIPPresenter()
         viewController.interactor = interactor
         interactor.presenter = presenter
+        interactor.item = contact
         presenter.viewController = viewController
     }
 }

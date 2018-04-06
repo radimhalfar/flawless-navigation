@@ -11,7 +11,10 @@ final class MasterVIPRouter: MasterVIPRoutingLogic {
     var dataStore: MasterVIPDataStore?
 
     func routeToContact(at index: Int) {
-        guard let item = dataStore?.item(at: index) else { return }
-        // TODO: show detail
+        guard let item = dataStore?.item(at: index),
+            let controller = UIStoryboard(name: "DetailVIP", bundle: nil).instantiateInitialViewController() as? DetailVIPViewController
+            else { return }
+        controller.contact = item
+        viewController?.navigationController?.pushViewController(controller, animated: true)
     }
 }

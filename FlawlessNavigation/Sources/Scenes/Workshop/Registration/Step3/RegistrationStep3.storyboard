@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YeA-WN-0dT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registration Step3 View Controller-->
+        <scene sceneID="8zr-Db-1gn">
+            <objects>
+                <viewController id="YeA-WN-0dT" customClass="RegistrationStep3ViewController" customModule="FlawlessNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bGf-Fl-dGN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Dc-3k-k29">
+                                <rect key="frame" x="24" y="208.5" width="327" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YeA-WN-0dT" id="SPD-A5-i87"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGw-nn-aoN">
+                                <rect key="frame" x="24" y="179.5" width="136" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjE-zq-iRN">
+                                <rect key="frame" x="127.5" y="260" width="120" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="f5y-aK-v5N"/>
+                                    <constraint firstAttribute="width" constant="120" id="hDC-Af-0Vd"/>
+                                </constraints>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitPressed" destination="YeA-WN-0dT" eventType="touchUpInside" id="kpA-Ft-1CO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JjE-zq-iRN" firstAttribute="centerX" secondItem="8Dc-3k-k29" secondAttribute="centerX" id="2i5-tM-uTk"/>
+                            <constraint firstItem="8Dc-3k-k29" firstAttribute="centerY" secondItem="mCh-0h-QMM" secondAttribute="centerY" constant="-120" id="5Le-uD-cQn"/>
+                            <constraint firstItem="8Dc-3k-k29" firstAttribute="leading" secondItem="mCh-0h-QMM" secondAttribute="leading" constant="24" id="Hlr-fc-iC9"/>
+                            <constraint firstItem="JjE-zq-iRN" firstAttribute="top" secondItem="8Dc-3k-k29" secondAttribute="bottom" constant="21.5" id="Wb6-lT-M2Z"/>
+                            <constraint firstItem="8Dc-3k-k29" firstAttribute="top" secondItem="vGw-nn-aoN" secondAttribute="bottom" constant="8.5" id="igU-7n-RG2"/>
+                            <constraint firstItem="vGw-nn-aoN" firstAttribute="leading" secondItem="8Dc-3k-k29" secondAttribute="leading" id="s4s-gS-OKP"/>
+                            <constraint firstItem="8Dc-3k-k29" firstAttribute="centerX" secondItem="mCh-0h-QMM" secondAttribute="centerX" id="sGV-sH-IIf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mCh-0h-QMM"/>
+                    </view>
+                    <connections>
+                        <outlet property="phoneTextField" destination="8Dc-3k-k29" id="wd4-jH-Q31"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="we2-98-bgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.799999999999997" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>

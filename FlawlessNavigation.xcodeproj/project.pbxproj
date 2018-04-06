@@ -35,6 +35,13 @@
 		CEC1875420765ECF008E791C /* DetailVIPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1874E20765ECF008E791C /* DetailVIPViewController.swift */; };
 		CEC1875520765ECF008E791C /* DetailVIPInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1874F20765ECF008E791C /* DetailVIPInteractor.swift */; };
 		CEC1875720769DC2008E791C /* DetailVIP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC1875620769DC2008E791C /* DetailVIP.storyboard */; };
+		CEC1875C2076A17E008E791C /* RegistrationStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1875B2076A17E008E791C /* RegistrationStep1ViewController.swift */; };
+		CEC1875E2076A1C7008E791C /* RegistrationStep1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC1875D2076A1C7008E791C /* RegistrationStep1.storyboard */; };
+		CEC187612076A428008E791C /* RegistrationStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC187602076A428008E791C /* RegistrationStep2ViewController.swift */; };
+		CEC187632076A46A008E791C /* RegistrationDataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC187622076A46A008E791C /* RegistrationDataHolder.swift */; };
+		CEC1876520775306008E791C /* RegistrationStep2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC1876420775306008E791C /* RegistrationStep2.storyboard */; };
+		CEC1876820775DF9008E791C /* RegistrationStep3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC1876720775DF9008E791C /* RegistrationStep3.storyboard */; };
+		CEC1876A20775E42008E791C /* RegistrationStep3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1876920775E42008E791C /* RegistrationStep3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +76,13 @@
 		CEC1874E20765ECF008E791C /* DetailVIPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVIPViewController.swift; sourceTree = "<group>"; };
 		CEC1874F20765ECF008E791C /* DetailVIPInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVIPInteractor.swift; sourceTree = "<group>"; };
 		CEC1875620769DC2008E791C /* DetailVIP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailVIP.storyboard; sourceTree = "<group>"; };
+		CEC1875B2076A17E008E791C /* RegistrationStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep1ViewController.swift; sourceTree = "<group>"; };
+		CEC1875D2076A1C7008E791C /* RegistrationStep1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationStep1.storyboard; sourceTree = "<group>"; };
+		CEC187602076A428008E791C /* RegistrationStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep2ViewController.swift; sourceTree = "<group>"; };
+		CEC187622076A46A008E791C /* RegistrationDataHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDataHolder.swift; sourceTree = "<group>"; };
+		CEC1876420775306008E791C /* RegistrationStep2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationStep2.storyboard; sourceTree = "<group>"; };
+		CEC1876720775DF9008E791C /* RegistrationStep3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationStep3.storyboard; sourceTree = "<group>"; };
+		CEC1876920775E42008E791C /* RegistrationStep3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +136,7 @@
 		CEC1870D207638DE008E791C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CEC187582076A157008E791C /* Workshop */,
 				CEC187152076395C008E791C /* ArchitectureTypeSelection */,
 				CEC18710207638F1008E791C /* VIP */,
 				CEC1870F207638EB008E791C /* MVVM */,
@@ -287,6 +302,52 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		CEC187582076A157008E791C /* Workshop */ = {
+			isa = PBXGroup;
+			children = (
+				CEC187592076A164008E791C /* Registration */,
+			);
+			path = Workshop;
+			sourceTree = "<group>";
+		};
+		CEC187592076A164008E791C /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				CEC187622076A46A008E791C /* RegistrationDataHolder.swift */,
+				CEC1875F2076A407008E791C /* Step2 */,
+				CEC18766207754B5008E791C /* Step3 */,
+				CEC1875A2076A16A008E791C /* Step1 */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		CEC1875A2076A16A008E791C /* Step1 */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1875B2076A17E008E791C /* RegistrationStep1ViewController.swift */,
+				CEC1875D2076A1C7008E791C /* RegistrationStep1.storyboard */,
+			);
+			path = Step1;
+			sourceTree = "<group>";
+		};
+		CEC1875F2076A407008E791C /* Step2 */ = {
+			isa = PBXGroup;
+			children = (
+				CEC187602076A428008E791C /* RegistrationStep2ViewController.swift */,
+				CEC1876420775306008E791C /* RegistrationStep2.storyboard */,
+			);
+			path = Step2;
+			sourceTree = "<group>";
+		};
+		CEC18766207754B5008E791C /* Step3 */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1876920775E42008E791C /* RegistrationStep3ViewController.swift */,
+				CEC1876720775DF9008E791C /* RegistrationStep3.storyboard */,
+			);
+			path = Step3;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,12 +408,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC1872C207649F1008E791C /* MasterMVVM.storyboard in Resources */,
+				CEC1876820775DF9008E791C /* RegistrationStep3.storyboard in Resources */,
 				CEC18719207639CA008E791C /* ArchitectureRouting.storyboard in Resources */,
 				CEC18728207647D5008E791C /* DetailMVC.storyboard in Resources */,
 				CEC18705207638D2008E791C /* LaunchScreen.storyboard in Resources */,
 				CEC18702207638D2008E791C /* Assets.xcassets in Resources */,
+				CEC1876520775306008E791C /* RegistrationStep2.storyboard in Resources */,
 				CEC1875720769DC2008E791C /* DetailVIP.storyboard in Resources */,
 				CEC187382076526C008E791C /* DetailMVVM.storyboard in Resources */,
+				CEC1875E2076A1C7008E791C /* RegistrationStep1.storyboard in Resources */,
 				CEC1874820765AD5008E791C /* MasterVIP.storyboard in Resources */,
 				CEC18700207638D2008E791C /* MasterMVC.storyboard in Resources */,
 			);
@@ -368,10 +432,14 @@
 				CEC1873620765228008E791C /* DetailMVVMViewController.swift in Sources */,
 				CEC1872F20764A16008E791C /* MasterViewModel.swift in Sources */,
 				CEC18745207654D5008E791C /* MasterVIPViewController.swift in Sources */,
+				CEC187612076A428008E791C /* RegistrationStep2ViewController.swift in Sources */,
+				CEC187632076A46A008E791C /* RegistrationDataHolder.swift in Sources */,
 				CEC1875320765ECF008E791C /* DetailVIPModels.swift in Sources */,
 				CEC1875420765ECF008E791C /* DetailVIPViewController.swift in Sources */,
 				CEC18726207646E7008E791C /* DetailMVCViewController.swift in Sources */,
 				CEC186FD207638D2008E791C /* MasterMVCViewController.swift in Sources */,
+				CEC1875C2076A17E008E791C /* RegistrationStep1ViewController.swift in Sources */,
+				CEC1876A20775E42008E791C /* RegistrationStep3ViewController.swift in Sources */,
 				CEC18743207654D5008E791C /* MasterVIPRouter.swift in Sources */,
 				CEC18734207651D1008E791C /* DetailViewModel.swift in Sources */,
 				CEC186FB207638D2008E791C /* AppDelegate.swift in Sources */,
